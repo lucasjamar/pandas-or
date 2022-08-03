@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "pandas-or"
+version = "0.1.0"
+description = "Operations research with Ortools and Pandas."
+authors = ["lucas.jamar <lucasjamar@hotmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/lucasjamar/pandas-or"
+exclude = ["examples/*", "tests/*"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pandas = "^1.2.0"
+ortools = "^9.3.10497"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
