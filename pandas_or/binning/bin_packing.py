@@ -42,6 +42,8 @@ def bin_packing(items: pd.DataFrame, capacity: int) -> pd.DataFrame:
         items["itemIsPacked"] = (
             items["itemIsPacked"].apply(lambda x: x.solution_value()) == 1
         )
+        items = items.query("binIsUsed and itemIsPacked").reset_index(drop=True)
+        items["binId"] = items.groupby("binId").ngroup()
         return items.sort_values(["itemId", "binId"])
     else:
         print("The problem does not have an optimal solution.")
