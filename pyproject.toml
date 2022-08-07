@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "pandas-or"
-version = "0.1.2"
-description = "Operations research with Ortools and Pandas."
+version = "0.1.3"
+description = "Optimization research with Ortools and Pandas."
 authors = ["lucas.jamar"]
 license = "Apache-2.0"
 readme = "README.md"

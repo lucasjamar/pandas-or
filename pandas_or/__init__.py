@@ -1,4 +1,4 @@
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 
 from pandas_or.binning.knapsack import knapsack
 from pandas_or.binning.multi_knapsack import multi_knapsack

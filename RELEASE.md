@@ -1,3 +1,8 @@
+## [0.1.3] - 2022-08-07
+
+### Fixed
+* Replaced `operations research` with `optimization research` in docs.
+
 ## [0.1.2] - 2022-08-07
 
 ### Fixed

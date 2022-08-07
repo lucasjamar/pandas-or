@@ -8,10 +8,10 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/lucasjamar6)
 
-Operations research made easy using [Pandas](https://pandas.pydata.org/) and [Ortools](https://developers.google.com/optimization).
+Optimization research made easy using [Pandas](https://pandas.pydata.org/) and [Ortools](https://developers.google.com/optimization).
 
 The purpose of working with Pandas in combination with Ortools is to bridge the gap between
-operations research and data analytics, data science, and data visualization.
+optimization research and data analytics, data science, and data visualization.
 With pandas-or, you can solve complex knapsack or vehicle routing type problems and then create
 statistics, plots, and dashboards from your results!
 
