@@ -5,6 +5,8 @@
 [![PyPI download](https://img.shields.io/pypi/dm/pandas-or.svg)](https://pypi.org/project/pandas-or/#files)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/lucasjamar/pandas-or/HEAD?labpath=examples)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/lucasjamar/pandas-or/blob/main/LICENSE.md)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)![DOI](https://doi.org/10.5281/zenodo.3509134)
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/lucasjamar6)
 
 Operations research made easy using [Pandas](https://pandas.pydata.org/) and [Ortools](https://developers.google.com/optimization).
 
@@ -38,3 +40,6 @@ Try out the examples in Binder!
 ## &#x1F4DA; Read The Docs
 
 Coming soon!
+
+## Sponsors
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/lucasjamar6)

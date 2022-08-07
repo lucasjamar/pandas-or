@@ -3,6 +3,21 @@ import pandas as pd
 
 
 def bin_packing(items: pd.DataFrame, capacity: int) -> pd.DataFrame:
+    """
+    Returns a DataFrame where all items of different weights
+    are assigned to bins of a specific capacity. Allows us to determine the minimum
+    number of bins required to pack all items.
+
+        Parameters:
+            items (pd.DataFrame): DataFrame containing an `itemId` and `weights` column.
+            capacity (int): The capacity of all bins.
+
+        Returns:
+            items (pd.DataFrame): Input DataFrame with additional `binId` column of allocated bin.
+
+        Link:
+            https://developers.google.com/optimization/bin/bin_packing
+    """
     if not {"weight", "itemId"}.issubset(items.columns):
         raise AttributeError("Items DataFrame must have 'weight' and 'itemId' columns.")
     items = items.copy()
@@ -43,6 +58,7 @@ def bin_packing(items: pd.DataFrame, capacity: int) -> pd.DataFrame:
             items["itemIsPacked"].apply(lambda x: x.solution_value()) == 1
         )
         items = items.query("binIsUsed and itemIsPacked").reset_index(drop=True)
+        items = items.drop(columns=["capacity", "binIsUsed", "itemIsPacked"])
         items["binId"] = items.groupby("binId").ngroup()
         return items.sort_values(["itemId", "binId"])
     else:

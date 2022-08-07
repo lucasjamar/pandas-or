@@ -3,8 +3,16 @@ def bins():
     return _get_dataset("binning/bins")
 
 
-def items():
-    return _get_dataset("binning/items")
+def items_knapsack():
+    return _get_dataset("binning/items_knapsack")
+
+
+def items_multi():
+    return _get_dataset("binning/items_multi")
+
+
+def items_bin_packing():
+    return _get_dataset("binning/items_bin_packing")
 
 
 # Routing data
@@ -29,4 +37,3 @@ def _get_dataset(d):
             "data", f"{d}.csv",
         )
     )
-
